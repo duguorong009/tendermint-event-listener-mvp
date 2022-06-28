@@ -1,0 +1,110 @@
+   // [
+    //     Event { type_str: "coin_spent", attributes: [
+    //         Tag { key: Key("spender"), value: Value("juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd") }, 
+    //         Tag { key: Key("amount"), value: Value("325ujuno") }] 
+    //     }, 
+    //     Event { type_str: "coin_received", attributes: [
+    //         Tag { key: Key("receiver"), value: Value("juno17xpfvakm2amg962yls6f84z3kell8c5lxtqmvp") }, 
+    //         Tag { key: Key("amount"), value: Value("325ujuno") }] 
+    //     }, 
+    //     Event { type_str: "transfer", attributes: [
+    //         Tag { key: Key("recipient"), value: Value("juno17xpfvakm2amg962yls6f84z3kell8c5lxtqmvp") }, 
+    //         Tag { key: Key("sender"), value: Value("juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd") }, 
+    //         Tag { key: Key("amount"), value: Value("325ujuno") }] 
+    //     }, 
+
+    //     Event { type_str: "message", attributes: [
+    //         Tag { key: Key("sender"), value: Value("juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd") }] 
+    //     }, 
+    //     Event { type_str: "tx", attributes: [
+    //         Tag { key: Key("fee"), value: Value("325ujuno") }] 
+    //     }, 
+    //     Event { type_str: "tx", attributes: [
+    //         Tag { key: Key("acc_seq"), value: Value("juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd/264") }] 
+    //     }, 
+    //     Event { type_str: "tx", attributes: [
+    //         Tag { key: Key("signature"), value: Value("dWuVGwgXaPP4MD6EfIOmysVdvaiguuIWo3eT53EuC+Foti1+sjyHLt52YPCHKy+Kb0iQsI9yRr3ifQqODTPU7w==") }] 
+    //     }, 
+
+
+    //     Event { type_str: "message", attributes: [
+    //         Tag { key: Key("action"), value: Value("/ibc.applications.transfer.v1.MsgTransfer") }] 
+    //     }, 
+    //     Event { type_str: "coin_spent", attributes: [
+    //         Tag { key: Key("spender"), value: Value("juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd") }, 
+    //         Tag { key: Key("amount"), value: Value("4338608ujuno") }] 
+    //     }, 
+    //     Event { type_str: "coin_received", attributes: [
+    //         Tag { key: Key("receiver"), value: Value("juno1a53udazy8ayufvy0s434pfwjcedzqv34q7p7vj") }, 
+    //         Tag { key: Key("amount"), value: Value("4338608ujuno") }] 
+    //     }, 
+    //     Event { type_str: "transfer", attributes: [
+    //         Tag { key: Key("recipient"), value: Value("juno1a53udazy8ayufvy0s434pfwjcedzqv34q7p7vj") }, 
+    //         Tag { key: Key("sender"), value: Value("juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd") }, 
+    //         Tag { key: Key("amount"), value: Value("4338608ujuno") }] 
+    //     }, 
+    //     Event { type_str: "message", attributes: [
+    //         Tag { key: Key("sender"), value: Value("juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd") }] 
+    //     }, 
+    //     Event { type_str: "send_packet", attributes: [
+    //         Tag { key: Key("packet_data"), value: Value("{\"amount\":\"4338608\",\"denom\":\"ujuno\",\"receiver\":\"osmo1hs4kxjmksq5cp3g33qt9s8ph2gumjwtymqtzhr\",\"sender\":\"juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd\"}") }, 
+    //         Tag { key: Key("packet_data_hex"), value: Value("7b22616d6f756e74223a2234333338363038222c2264656e6f6d223a22756a756e6f222c227265636569766572223a226f736d6f316873346b786a6d6b737135637033673333717439733870683267756d6a7774796d71747a6872222c2273656e646572223a226a756e6f316873346b786a6d6b737135637033673333717439733870683267756d6a77747939666d667864227d") }, 
+    //         Tag { key: Key("packet_timeout_height"), value: Value("1-4819226") }, 
+    //         Tag { key: Key("packet_timeout_timestamp"), value: Value("0") }, 
+    //         Tag { key: Key("packet_sequence"), value: Value("392799") }, 
+    //         Tag { key: Key("packet_src_port"), value: Value("transfer") }, 
+    //         Tag { key: Key("packet_src_channel"), value: Value("channel-0") }, 
+    //         Tag { key: Key("packet_dst_port"), value: Value("transfer") }, 
+    //         Tag { key: Key("packet_dst_channel"), value: Value("channel-42") }, 
+    //         Tag { key: Key("packet_channel_ordering"), value: Value("ORDER_UNORDERED") }, 
+    //         Tag { key: Key("packet_connection"), value: Value("connection-0") }] 
+    //     }, 
+    //     Event { type_str: "message", attributes: [
+    //         Tag { key: Key("module"), value: Value("ibc_channel") }] 
+    //     }, 
+    //     Event { type_str: "ibc_transfer", attributes: [
+    //         Tag { key: Key("sender"), value: Value("juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd") }, 
+    //         Tag { key: Key("receiver"), value: Value("osmo1hs4kxjmksq5cp3g33qt9s8ph2gumjwtymqtzhr") }] 
+    //     }, 
+    //     Event { type_str: "message", attributes: [
+    //         Tag { key: Key("module"), value: Value("transfer") }] 
+    //     }
+    // ]
+    
+    // Log("[
+    //         {\"events\":[
+    //             {\"type\":\"coin_received\",\"attributes\":[
+    //                 {\"key\":\"receiver\",\"value\":\"juno1a53udazy8ayufvy0s434pfwjcedzqv34q7p7vj\"},
+    //                 {\"key\":\"amount\",\"value\":\"4338608ujuno\"}]
+    //             },
+
+    //             {\"type\":\"coin_spent\",\"attributes\":[
+    //                 {\"key\":\"spender\",\"value\":\"juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd\"},
+    //                 {\"key\":\"amount\",\"value\":\"4338608ujuno\"}]
+    //             },
+
+    //             {\"type\":\"ibc_transfer\",\"attributes\":[
+    //                 {\"key\":\"sender\",\"value\":\"juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd\"},
+    //                 {\"key\":\"receiver\",\"value\":\"osmo1hs4kxjmksq5cp3g33qt9s8ph2gumjwtymqtzhr\"}]
+    //             },
+    //             {\"type\":\"message\",\"attributes\":[
+    //                 {\"key\":\"action\",\"value\":\"/ibc.applications.transfer.v1.MsgTransfer\"},
+    //                 {\"key\":\"sender\",\"value\":\"juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd\"},
+    //                 {\"key\":\"module\",\"value\":\"ibc_channel\"},{\"key\":\"module\",\"value\":\"transfer\"}]
+    //             },
+    //             {\"type\":\"send_packet\",\"attributes\":[
+    //                 {\"key\":\"packet_data\",\"value\":\"{\\\"amount\\\":\\\"4338608\\\",\\\"denom\\\":\\\"ujuno\\\",\\\"receiver\\\":\\\"osmo1hs4kxjmksq5cp3g33qt9s8ph2gumjwtymqtzhr\\\",\\\"sender\\\":\\\"juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd\\\"}\"},
+    //                 {\"key\":\"packet_data_hex\",\"value\":\"7b22616d6f756e74223a2234333338363038222c2264656e6f6d223a22756a756e6f222c227265636569766572223a226f736d6f316873346b786a6d6b737135637033673333717439733870683267756d6a7774796d71747a6872222c2273656e646572223a226a756e6f316873346b786a6d6b737135637033673333717439733870683267756d6a77747939666d667864227d\"},
+    //                 {\"key\":\"packet_timeout_height\",\"value\":\"1-4819226\"},
+    //                 {\"key\":\"packet_timeout_timestamp\",\"value\":\"0\"},
+    //                 {\"key\":\"packet_sequence\",\"value\":\"392799\"},
+    //                 {\"key\":\"packet_src_port\",\"value\":\"transfer\"},
+    //                 {\"key\":\"packet_src_channel\",\"value\":\"channel-0\"},
+    //                 {\"key\":\"packet_dst_port\",\"value\":\"transfer\"},
+    //                 {\"key\":\"packet_dst_channel\",\"value\":\"channel-42\"},
+    //                 {\"key\":\"packet_channel_ordering\",\"value\":\"ORDER_UNORDERED\"},
+    //                 {\"key\":\"packet_connection\",\"value\":\"connection-0\"}]},
+    //             {\"type\":\"transfer\",\"attributes\":[
+    //                 {\"key\":\"recipient\",\"value\":\"juno1a53udazy8ayufvy0s434pfwjcedzqv34q7p7vj\"},
+    //                 {\"key\":\"sender\",\"value\":\"juno1hs4kxjmksq5cp3g33qt9s8ph2gumjwty9fmfxd\"},
+    //                 {\"key\":\"amount\",\"value\":\"4338608ujuno\"}]}]}]")

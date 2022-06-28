@@ -1,0 +1,16 @@
+[package]
+name = "event-listener-mvp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# cosmos-sdk-proto = "0.12.3"
+cosmrs = { version = "0.7.1", features = ["default", "dev", "rpc", "cosmwasm"] }
+tokio = { version = "1", features = ["full"] }
+
+tendermint = "0.23.7"
+tendermint-abci = "0.23.7"
+tendermint-light-client = "0.23.7"
+tendermint-rpc = { version = "0.23.7" }
