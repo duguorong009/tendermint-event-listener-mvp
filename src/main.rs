@@ -15,18 +15,27 @@ async fn main() {
     let mut queue: VecDeque<Height> = VecDeque::new();
     let client = HttpClient::new(JUNO_RPC).unwrap();
 
-   
-    while queue.len() < 5 {
-        let resp = client.status();
-        let height = resp.await.unwrap().sync_info.latest_block_height;
-        queue.push_back(height);
-        println!("queue: {:?}", queue);
+    while let Ok(latest_block) = client.latest_block().await {
+        let latest_block_height = latest_block.block.header.height;
+        match queue.len() {
+            0 => queue.push_back(latest_block_height),
+            1..=5 => {
+                let n = queue.len();
+                if latest_block_height != queue[n - 1] {
+                    queue.push_back(latest_block_height);
+                }
+            }
+            _ => {
+                let bh = queue.pop_front().unwrap();
+                show_wasm_events(&client, bh).await;
+            }
+        }
     }
-
     println!("Final: {:?}", queue);
 }
 
 async fn show_wasm_events(client: &HttpClient, height: Height) {
+    println!("Transaction height::: {}", height.value());
     let searched_tx = client
         .tx_search(
             Query::from_str(format!("tx.height = {}", height.value()).as_str()).unwrap(),
