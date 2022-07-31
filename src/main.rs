@@ -11,6 +11,8 @@ use colored::*;
 const LOCAL_RPC: &str = "http://127.0.0.1:26657";
 const JUNO_RPC: &str = "https://rpc-juno.itastakers.com";
 
+const QUEUE_SIZE: usize = 5;
+
 #[tokio::main]
 async fn main() {
     let mut queue: VecDeque<Height> = VecDeque::new();
@@ -20,7 +22,7 @@ async fn main() {
         let latest_block_height = latest_block.block.header.height;
         match queue.len() {
             0 => queue.push_back(latest_block_height),
-            1..=5 => {
+            1..=QUEUE_SIZE => {
                 let n = queue.len();
                 if latest_block_height != queue[n - 1] {
                     queue.push_back(latest_block_height);
