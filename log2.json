@@ -1,0 +1,130 @@
+{
+    "JUNO_RPC": "https://rpc-juno.itastakers.com",
+
+    "latest_block": "block::Height(3609526)",
+
+    "Searched txs counts": 1,
+
+    "Searched tx": "transaction::Hash(80AAB2FF956F31E711C0511C4F65FE324B2042FB288C7AF53131556CC8C50814)",
+
+    "tx_detail": Response { 
+        hash: transaction::Hash(80AAB2FF956F31E711C0511C4F65FE324B2042FB288C7AF53131556CC8C50814), 
+        height: block::Height(3609526), 
+        index: 0, 
+        tx_result: DeliverTx { 
+            code: Ok, 
+            data: Data([10, 38, 10, 36, 47, 99, 111, 115, 109, 119, 97, 115, 109, 46, 119, 97, 115, 109, 46, 118, 49, 46, 77, 115, 103, 69, 120, 101, 99, 117, 116, 101, 67, 111, 110, 116, 114, 97, 99, 116]), 
+            log: Log("[{\"events\":[{\"type\":\"execute\",\"attributes\":[{\"key\":\"_contract_address\",\"value\":\"juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g\"},{\"key\":\"_contract_address\",\"value\":\"juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled\"}]},{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"/cosmwasm.wasm.v1.MsgExecuteContract\"},{\"key\":\"module\",\"value\":\"wasm\"},{\"key\":\"sender\",\"value\":\"juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd\"}]},{\"type\":\"wasm\",\"attributes\":[{\"key\":\"_contract_address\",\"value\":\"juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g\"},{\"key\":\"action\",\"value\":\"send\"},{\"key\":\"from\",\"value\":\"juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd\"},{\"key\":\"to\",\"value\":\"juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled\"},{\"key\":\"amount\",\"value\":\"690000000\"},{\"key\":\"_contract_address\",\"value\":\"juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled\"},{\"key\":\"action\",\"value\":\"stake\"},{\"key\":\"from\",\"value\":\"juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd\"},{\"key\":\"amount\",\"value\":\"690000000\"}]}]}]"), 
+            info: Info(""), 
+            gas_wanted: Gas(289003), 
+            gas_used: Gas(236542), 
+            events: [
+                Event { type_str: "coin_spent", attributes: [Tag { key: Key("spender"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }, Tag { key: Key("amount"), value: Value("723ujuno") }] }, 
+                Event { type_str: "coin_received", attributes: [Tag { key: Key("receiver"), value: Value("juno17xpfvakm2amg962yls6f84z3kell8c5lxtqmvp") }, Tag { key: Key("amount"), value: Value("723ujuno") }] }, 
+                Event { type_str: "transfer", attributes: [Tag { key: Key("recipient"), value: Value("juno17xpfvakm2amg962yls6f84z3kell8c5lxtqmvp") }, Tag { key: Key("sender"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }, Tag { key: Key("amount"), value: Value("723ujuno") }] }, 
+                Event { type_str: "message", attributes: [Tag { key: Key("sender"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }] }, 
+                Event { type_str: "tx", attributes: [Tag { key: Key("fee"), value: Value("723ujuno") }] }, 
+                Event { type_str: "tx", attributes: [Tag { key: Key("acc_seq"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd/98") }] }, 
+                Event { type_str: "tx", attributes: [Tag { key: Key("signature"), value: Value("uLy8zrl/06Is9RGLLxJSWtOHjgCSsbFxKIn486giCKt+DhLQerFF5WQCGvHMTEMuR4UPqD1gvQAOLZn1T/u2hA==") }] }, 
+                
+                Event { type_str: "message", attributes: [Tag { key: Key("action"), value: Value("/cosmwasm.wasm.v1.MsgExecuteContract") }] }, 
+                Event { type_str: "message", attributes: [Tag { key: Key("module"), value: Value("wasm") }, Tag { key: Key("sender"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }] }, 
+                Event { type_str: "execute", attributes: [Tag { key: Key("_contract_address"), value: Value("juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g") }] }, 
+                Event { type_str: "wasm", attributes: [Tag { key: Key("_contract_address"), value: Value("juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g") }, Tag { key: Key("action"), value: Value("send") }, Tag { key: Key("from"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }, Tag { key: Key("to"), value: Value("juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled") }, Tag { key: Key("amount"), value: Value("690000000") }] }, 
+                Event { type_str: "execute", attributes: [Tag { key: Key("_contract_address"), value: Value("juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled") }] }, 
+                Event { type_str: "wasm", attributes: [Tag { key: Key("_contract_address"), value: Value("juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled") }, Tag { key: Key("action"), value: Value("stake") }, Tag { key: Key("from"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }, Tag { key: Key("amount"), value: Value("690000000") }] }
+            ], 
+            codespace: Codespace("") }, 
+            tx: Transaction([10, 166, 2, 10, 163, 2, 10, 36, 47, 99, 111, 115, 109, 119, 97, 115, 109, 46, 119, 97, 115, 109, 46, 118, 49, 46, 77, 115, 103, 69, 120, 101, 99, 117, 116, 101, 67, 111, 110, 116, 114, 97, 99, 116, 18, 250, 1, 10, 43, 106, 117, 110, 111, 49, 119, 56, 57, 56, 53, 121, 122, 108, 57, 52, 99, 55, 118, 104, 100, 122, 100, 110, 53, 116, 100, 117, 122, 50, 113, 106, 121, 114, 53, 115, 51, 54, 56, 109, 116, 109, 113, 100, 18, 63, 106, 117, 110, 111, 49, 53, 117, 51, 100, 116, 55, 57, 116, 54, 115, 120, 120, 97, 51, 120, 51, 107, 112, 107, 104, 122, 115, 121, 53, 54, 101, 100, 97, 97, 53, 97, 54, 54, 119, 118, 116, 51, 107, 120, 109, 117, 107, 113, 106, 122, 50, 115, 120, 48, 104, 101, 115, 53, 115, 110, 51, 56, 103, 26, 137, 1, 123, 34, 115, 101, 110, 100, 34, 58, 123, 34, 97, 109, 111, 117, 110, 116, 34, 58, 34, 54, 57, 48, 48, 48, 48, 48, 48, 48, 34, 44, 34, 99, 111, 110, 116, 114, 97, 99, 116, 34, 58, 34, 106, 117, 110, 111, 49, 118, 106, 99, 57, 112, 57, 107, 53, 106, 104, 54, 107, 120, 106, 50, 55, 50, 112, 119, 108, 119, 110, 108, 48, 110, 120, 116, 121, 54, 108, 118, 53, 101, 115, 122, 100, 108, 113, 118, 110, 108, 99, 52, 119, 100, 102, 103, 113, 120, 115, 122, 113, 56, 119, 106, 108, 101, 100, 34, 44, 34, 109, 115, 103, 34, 58, 34, 101, 121, 74, 122, 100, 71, 70, 114, 90, 83, 73, 54, 73, 72, 116, 57, 102, 81, 61, 61, 34, 125, 125, 18, 102, 10, 80, 10, 70, 10, 31, 47, 99, 111, 115, 109, 111, 115, 46, 99, 114, 121, 112, 116, 111, 46, 115, 101, 99, 112, 50, 53, 54, 107, 49, 46, 80, 117, 98, 75, 101, 121, 18, 35, 10, 33, 2, 157, 232, 118, 225, 154, 27, 199, 244, 181, 207, 136, 44, 157, 85, 61, 174, 194, 52, 77, 211, 154, 122, 197, 145, 73, 113, 135, 87, 67, 199, 20, 161, 18, 4, 10, 2, 8, 127, 24, 98, 18, 18, 10, 12, 10, 5, 117, 106, 117, 110, 111, 18, 3, 55, 50, 51, 16, 235, 209, 17, 26, 64, 184, 188, 188, 206, 185, 127, 211, 162, 44, 245, 17, 139, 47, 18, 82, 90, 211, 135, 142, 0, 146, 177, 177, 113, 40, 137, 248, 243, 168, 34, 8, 171, 126, 14, 18, 208, 122, 177, 69, 229, 100, 2, 26, 241, 204, 76, 67, 46, 71, 133, 15, 168, 61, 96, 189, 0, 14, 45, 153, 245, 79, 251, 182, 132]), 
+            proof: None 
+    },
+    
+    
+    "Events": [
+        Event { type_str: "coin_spent", attributes: [Tag { key: Key("spender"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }, Tag { key: Key("amount"), value: Value("723ujuno") }] }, 
+        Event { type_str: "coin_received", attributes: [Tag { key: Key("receiver"), value: Value("juno17xpfvakm2amg962yls6f84z3kell8c5lxtqmvp") }, Tag { key: Key("amount"), value: Value("723ujuno") }] }, 
+        Event { type_str: "transfer", attributes: [Tag { key: Key("recipient"), value: Value("juno17xpfvakm2amg962yls6f84z3kell8c5lxtqmvp") }, Tag { key: Key("sender"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }, Tag { key: Key("amount"), value: Value("723ujuno") }] }, 
+        Event { type_str: "message", attributes: [Tag { key: Key("sender"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }] }, 
+        Event { type_str: "tx", attributes: [Tag { key: Key("fee"), value: Value("723ujuno") }] }, 
+        Event { type_str: "tx", attributes: [Tag { key: Key("acc_seq"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd/98") }] }, 
+        Event { type_str: "tx", attributes: [Tag { key: Key("signature"), value: Value("uLy8zrl/06Is9RGLLxJSWtOHjgCSsbFxKIn486giCKt+DhLQerFF5WQCGvHMTEMuR4UPqD1gvQAOLZn1T/u2hA==") }] }, 
+        
+        Event { type_str: "message", attributes: [Tag { key: Key("action"), value: Value("/cosmwasm.wasm.v1.MsgExecuteContract") }] }, 
+        Event { type_str: "message", attributes: [Tag { key: Key("module"), value: Value("wasm") }, Tag { key: Key("sender"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }] }, 
+        Event { type_str: "execute", attributes: [Tag { key: Key("_contract_address"), value: Value("juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g") }] }, 
+        Event { type_str: "wasm", attributes: [Tag { key: Key("_contract_address"), value: Value("juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g") }, Tag { key: Key("action"), value: Value("send") }, Tag { key: Key("from"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }, Tag { key: Key("to"), value: Value("juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled") }, Tag { key: Key("amount"), value: Value("690000000") }] }, 
+        Event { type_str: "execute", attributes: [Tag { key: Key("_contract_address"), value: Value("juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled") }] }, 
+        Event { type_str: "wasm", attributes: [Tag { key: Key("_contract_address"), value: Value("juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled") }, Tag { key: Key("action"), value: Value("stake") }, Tag { key: Key("from"), value: Value("juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd") }, Tag { key: Key("amount"), value: Value("690000000") }] }
+    ],
+
+    "Log": Log("[
+        {\"events\":[
+            {
+                \"type\":\"execute\",
+                \"attributes\":[
+                    {
+                        \"key\":\"_contract_address\",\"value\":\"juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g\"
+                    }, 
+                    {
+                        \"key\":\"_contract_address\",\"value\":\"juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled\"
+                    },
+                ]
+            },
+            {
+                \"type\":\"message\",
+                \"attributes\":[
+                    {
+                        \"key\":\"action\",\"value\":\"/cosmwasm.wasm.v1.MsgExecuteContract\"
+                    },
+                    {
+                        \"key\":\"module\",\"value\":\"wasm\"
+                    },
+                    {
+                        \"key\":\"sender\",\"value\":\"juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd\"
+                    }
+                ]
+            },
+            {
+                \"type\":\"wasm\",\"attributes\":[
+                    {
+                        \"key\":\"_contract_address\",\"value\":\"juno15u3dt79t6sxxa3x3kpkhzsy56edaa5a66wvt3kxmukqjz2sx0hes5sn38g\"
+                    },
+                    {
+                        \"key\":\"action\",\"value\":\"send\"
+                    },
+                    {
+                        \"key\":\"from\",\"value\":\"juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd\"
+                    },
+                    {
+                        \"key\":\"to\",\"value\":\"juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled\"
+                    },
+                    {
+                        \"key\":\"amount\",\"value\":\"690000000\"
+                    },
+                    {
+                        \"key\":\"_contract_address\",\"value\":\"juno1vjc9p9k5jh6kxj272pwlwnl0nxty6lv5eszdlqvnlc4wdfgqxszq8wjled\"
+                    },
+                    {
+                        \"key\":\"action\",\"value\":\"stake\"
+                    },
+                    {
+                        \"key\":\"from\",\"value\":\"juno1w8985yzl94c7vhdzdn5tduz2qjyr5s368mtmqd\"
+                    },
+                    {
+                        \"key\":\"amount\",\"value\":\"690000000\"
+                    }
+                ]
+            }
+        ]}]"),
+
+        "Filtered wasm events": [
+            Event { 
+                type_str: "wasm", 
+                attributes: [
+                    Tag { key: Key("_contract_address"), value: Value("juno1ctsmp54v79x7ea970zejlyws50cj9pkrmw49x46085fn80znjmpqz2n642") }, 
+                    Tag { key: Key("native_sold"), value: Value("1000000") }, 
+                    Tag { key: Key("token_bought"), value: Value("2487275") }
+                ] 
+            }
+        ]
+}
