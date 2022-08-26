@@ -1,12 +1,11 @@
 use std::collections::VecDeque;
 use std::str::FromStr;
 
-use tendermint::abci::Event;
-use tendermint::block::Height;
-use tendermint_rpc::Order;
-use tendermint_rpc::{query::Query, Client, HttpClient};
-
 use colored::*;
+use cosmrs::rpc::Order;
+use cosmrs::rpc::{query::Query, Client, HttpClient};
+use cosmrs::tendermint::abci::Event;
+use cosmrs::tendermint::block::Height;
 
 const LOCAL_RPC: &str = "http://127.0.0.1:26657";
 const JUNO_RPC: &str = "https://rpc-juno.itastakers.com";
@@ -38,7 +37,10 @@ async fn main() {
 }
 
 async fn show_wasm_events(client: &HttpClient, height: Height) {
-    println!("Transaction height::: {}", height.value().to_string().green());
+    println!(
+        "Transaction height::: {}",
+        height.value().to_string().green()
+    );
     let searched_tx = client
         .tx_search(
             Query::from_str(format!("tx.height = {}", height.value()).as_str()).unwrap(),
@@ -51,7 +53,10 @@ async fn show_wasm_events(client: &HttpClient, height: Height) {
         .unwrap();
 
     if searched_tx.txs.len() > 0 {
-        println!("Searched txs counts: {}", searched_tx.total_count.to_string().red());
+        println!(
+            "Searched txs counts: {}",
+            searched_tx.total_count.to_string().red()
+        );
         let tx_count = searched_tx.total_count;
         for i in 0..tx_count {
             let tx = &searched_tx.txs[i as usize];
